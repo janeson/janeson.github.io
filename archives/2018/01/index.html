@@ -30,7 +30,7 @@
 
 
 
-    <link rel="shortcut icon" href="/favicon.png">
+    <link rel="shortcut icon" href="/apple-touch-icon.png">
 
 
 
@@ -69,7 +69,7 @@
         isCategory: false,
         fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
         scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
-        search: 
+        search: true
     }
 </script>
 
@@ -103,6 +103,13 @@
         <p class="header-subtitle">一生人，两梦。快慢不重要，一步一步踏实走。</p>
         
 
+        
+            <form id="search-form">
+            <input type="text" id="local-search-input" name="q" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="false" />
+            <i class="fa fa-times" onclick="resetSearch()"></i>
+            </form>
+            <div id="local-search-result"></div>
+            <p class='no-result'>No results found <i class='fa fa-spinner fa-pulse'></i></p>
         
 
 
@@ -154,15 +161,117 @@
                     <nav class="header-menu">
                         <ul>
                         
-                            <li><a href="/首页">home</a></li>
+                            <li><a href="/主">0</a></li>
                         
-                            <li><a href="/归档">archives</a></li>
+                            <li><a href="/页">1</a></li>
                         
-                            <li><a href="/分类">categories</a></li>
+                            <li><a href="/:">2</a></li>
                         
-                            <li><a href="/标签">tags</a></li>
+                            <li><a href="/">3</a></li>
                         
-                            <li><a href="/关于">about</a></li>
+                            <li><a href="/ ">4</a></li>
+                        
+                            <li><a href="/文">5</a></li>
+                        
+                            <li><a href="/章">6</a></li>
+                        
+                            <li><a href="/:">7</a></li>
+                        
+                            <li><a href="/">8</a></li>
+                        
+                            <li><a href="/a">9</a></li>
+                        
+                            <li><a href="/r">10</a></li>
+                        
+                            <li><a href="/c">11</a></li>
+                        
+                            <li><a href="/h">12</a></li>
+                        
+                            <li><a href="/i">13</a></li>
+                        
+                            <li><a href="/v">14</a></li>
+                        
+                            <li><a href="/e">15</a></li>
+                        
+                            <li><a href="/s">16</a></li>
+                        
+                            <li><a href="/">17</a></li>
+                        
+                            <li><a href="/ ">18</a></li>
+                        
+                            <li><a href="/分">19</a></li>
+                        
+                            <li><a href="/类">20</a></li>
+                        
+                            <li><a href="/:">21</a></li>
+                        
+                            <li><a href="/">22</a></li>
+                        
+                            <li><a href="/c">23</a></li>
+                        
+                            <li><a href="/a">24</a></li>
+                        
+                            <li><a href="/t">25</a></li>
+                        
+                            <li><a href="/e">26</a></li>
+                        
+                            <li><a href="/g">27</a></li>
+                        
+                            <li><a href="/o">28</a></li>
+                        
+                            <li><a href="/r">29</a></li>
+                        
+                            <li><a href="/i">30</a></li>
+                        
+                            <li><a href="/e">31</a></li>
+                        
+                            <li><a href="/s">32</a></li>
+                        
+                            <li><a href="/">33</a></li>
+                        
+                            <li><a href="/ ">34</a></li>
+                        
+                            <li><a href="/标">35</a></li>
+                        
+                            <li><a href="/签">36</a></li>
+                        
+                            <li><a href="/:">37</a></li>
+                        
+                            <li><a href="/">38</a></li>
+                        
+                            <li><a href="/t">39</a></li>
+                        
+                            <li><a href="/a">40</a></li>
+                        
+                            <li><a href="/g">41</a></li>
+                        
+                            <li><a href="/s">42</a></li>
+                        
+                            <li><a href="/">43</a></li>
+                        
+                            <li><a href="/ ">44</a></li>
+                        
+                            <li><a href="/关">45</a></li>
+                        
+                            <li><a href="/于">46</a></li>
+                        
+                            <li><a href="/我">47</a></li>
+                        
+                            <li><a href="/:">48</a></li>
+                        
+                            <li><a href="/">49</a></li>
+                        
+                            <li><a href="/a">50</a></li>
+                        
+                            <li><a href="/b">51</a></li>
+                        
+                            <li><a href="/o">52</a></li>
+                        
+                            <li><a href="/u">53</a></li>
+                        
+                            <li><a href="/t">54</a></li>
+                        
+                            <li><a href="/">55</a></li>
                         
                         </ul>
                     </nav>
@@ -231,15 +340,117 @@
             <nav class="header-menu">
                 <ul>
                 
-                    <li><a href="/首页">home</a></li>
+                    <li><a href="/主">0</a></li>
                 
-                    <li><a href="/归档">archives</a></li>
+                    <li><a href="/页">1</a></li>
                 
-                    <li><a href="/分类">categories</a></li>
+                    <li><a href="/:">2</a></li>
                 
-                    <li><a href="/标签">tags</a></li>
+                    <li><a href="/">3</a></li>
                 
-                    <li><a href="/关于">about</a></li>
+                    <li><a href="/ ">4</a></li>
+                
+                    <li><a href="/文">5</a></li>
+                
+                    <li><a href="/章">6</a></li>
+                
+                    <li><a href="/:">7</a></li>
+                
+                    <li><a href="/">8</a></li>
+                
+                    <li><a href="/a">9</a></li>
+                
+                    <li><a href="/r">10</a></li>
+                
+                    <li><a href="/c">11</a></li>
+                
+                    <li><a href="/h">12</a></li>
+                
+                    <li><a href="/i">13</a></li>
+                
+                    <li><a href="/v">14</a></li>
+                
+                    <li><a href="/e">15</a></li>
+                
+                    <li><a href="/s">16</a></li>
+                
+                    <li><a href="/">17</a></li>
+                
+                    <li><a href="/ ">18</a></li>
+                
+                    <li><a href="/分">19</a></li>
+                
+                    <li><a href="/类">20</a></li>
+                
+                    <li><a href="/:">21</a></li>
+                
+                    <li><a href="/">22</a></li>
+                
+                    <li><a href="/c">23</a></li>
+                
+                    <li><a href="/a">24</a></li>
+                
+                    <li><a href="/t">25</a></li>
+                
+                    <li><a href="/e">26</a></li>
+                
+                    <li><a href="/g">27</a></li>
+                
+                    <li><a href="/o">28</a></li>
+                
+                    <li><a href="/r">29</a></li>
+                
+                    <li><a href="/i">30</a></li>
+                
+                    <li><a href="/e">31</a></li>
+                
+                    <li><a href="/s">32</a></li>
+                
+                    <li><a href="/">33</a></li>
+                
+                    <li><a href="/ ">34</a></li>
+                
+                    <li><a href="/标">35</a></li>
+                
+                    <li><a href="/签">36</a></li>
+                
+                    <li><a href="/:">37</a></li>
+                
+                    <li><a href="/">38</a></li>
+                
+                    <li><a href="/t">39</a></li>
+                
+                    <li><a href="/a">40</a></li>
+                
+                    <li><a href="/g">41</a></li>
+                
+                    <li><a href="/s">42</a></li>
+                
+                    <li><a href="/">43</a></li>
+                
+                    <li><a href="/ ">44</a></li>
+                
+                    <li><a href="/关">45</a></li>
+                
+                    <li><a href="/于">46</a></li>
+                
+                    <li><a href="/我">47</a></li>
+                
+                    <li><a href="/:">48</a></li>
+                
+                    <li><a href="/">49</a></li>
+                
+                    <li><a href="/a">50</a></li>
+                
+                    <li><a href="/b">51</a></li>
+                
+                    <li><a href="/o">52</a></li>
+                
+                    <li><a href="/u">53</a></li>
+                
+                    <li><a href="/t">54</a></li>
+                
+                    <li><a href="/">55</a></li>
                 
                 <div class="clearfix"></div>
                 </ul>
@@ -372,12 +583,12 @@
             
             
             
-            
-            
-            
+             tags: ".article-tag a", 
+             categories: ".article-category a, a.tag-list-link", 
+             articleNav: "#article-nav a, #post-nav-button a", 
              archives: ".archive-article-title", 
              miniArchives: "a.post-list-link", 
-            
+             menu: ".header-menu a", 
              friends: "#js-friends a", 
              socail: ".social a" 
         }
